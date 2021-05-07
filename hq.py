@@ -19,9 +19,9 @@ from dhooks import Webhook, Embed
 import aniso8601
 
 
-webhook_url="https://discordapp.com/api/webhooks/793889253528436756/YOEtJQLUEdu1h9DBd2Sxd5SjCrJlS67qkCaSeo9dRj5_LUrvlfbdIL5pM6YwXPdSM9T4"
+webhook_url="https://discordapp.com/api/webhooks/840055478096101396/z_Tjh5IDUTZioSpAZigTCG48c9rpRGPjy4S7GKXbaHrscuQWgM3tB5CHVZf4EvkcBgPV"
 
-we="https://discordapp.com/api/webhooks/793889253528436756/YOEtJQLUEdu1h9DBd2Sxd5SjCrJlS67qkCaSeo9dRj5_LUrvlfbdIL5pM6YwXPdSM9T4"
+we="https://discordapp.com/api/webhooks/840055478096101396/z_Tjh5IDUTZioSpAZigTCG48c9rpRGPjy4S7GKXbaHrscuQWgM3tB5CHVZf4EvkcBgPV"
 
 
 try:
@@ -139,7 +139,7 @@ def connect_websocket(socket_url, auth_token):
                 real_question = str(question).replace(" ","+")
                 google_query = "https://google.com/search?q="+real_question             
                 embed=discord.Embed(title=f"**{qcnt}. {question}**",description=f"**1. {answers[0]}\n2. {answers[1]}\n3. {answers[2]}**",color=0xff5733)
-                embed.set_footer(text="Made By Subrata#3297", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
+                embed.set_footer(text="Made By @SECURITY🥀ⱽᵒˡᵗ#0001 ", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
                 embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/765632168650866750/770460404714962974/IMG_20200920_211614.jpg")
                 hook.send(embed=embed)
                 option1=f"{answers[0]}"
@@ -165,19 +165,19 @@ def connect_websocket(socket_url, auth_token):
                     embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}** <:emoji_13:772843132093202443>\n**2. {answers[1]}:** **{countoption2}**\n**3. {answers[2]}:** **{countoption3}**", color=0x00FBFF)
                     hook.send(embed=embed2)
                     #hook.send(f"**Google Answer = 1. {answers[0]}** <:emoji_13:772843132093202443>")
-                    hook.send("+al")
+                    hook.send("+h")
                   
                 elif countoption2 == maxcount:
                     embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}**\n**2. {answers[1]}:** **{countoption2}** <:emoji_13:772843132093202443>\n**3. {answers[2]}:** **{countoption3}**", color=0x00FBFF)
                     hook.send(embed=embed2)
                     #hook.send(f"**Google Answer = 2. {answers[1]}** <:emoji_13:772843132093202443>")
-                    hook.send("+al")
+                    hook.send("+h")
                     
                 else:
                     embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}**\n**2. {answers[1]}:** **{countoption2}**\n**3. {answers[2]}:** **{countoption3}** <:emoji_13:772843132093202443>", color=0x00FBFF)
                     hook.send(embed=embed2)
                     #hook.send(f"**Google Answer = 3. {answers[2]}** <:emoji_13:772843132093202443>")
-                    hook.send("+al")
+                    hook.send("+h")
                     
 
             elif message_data["type"] == "questionSummary":
@@ -199,7 +199,7 @@ def connect_websocket(socket_url, auth_token):
                 #hook.send(f"**Correct Answer -- {correct}**")
                 #hook.send(f"**Advancing -- {advancing}      Eliminating --- {eliminated}**")
                 embd=discord.Embed(title="**__Answer Stats !__** ",description=f"**● Correct Answer: {correct}** <:emoji_13:772843132093202443>\n**● Advancing Players: {advancing}**\n**● Eliminated  Players: {eliminated}**",color=0x4286f4)
-                embd.set_footer(text=f"Made by Subrata#3297", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
+                embd.set_footer(text=f"Made by SECURITY🥀ⱽᵒˡᵗ#0001 ", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
                 hook.send(embed=embd)
 
             elif message_data["type"] == "gameSummary":
@@ -210,7 +210,7 @@ def connect_websocket(socket_url, auth_token):
                 embed.add_field(name="**● Total Winners :**", value=f"**➨ {winn} 🎉**", inline=True)
                # embed.add_field(name="*● Prize Money :**", value=f"**5000$**", inline=True)
                 embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/737764195743039488/737768505935659178/giphy1.gif")
-                embed.set_footer(text=f"Made By Subrata#3297", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
+                embed.set_footer(text=f"Made By SECURITY🥀ⱽᵒˡᵗ#0001 ", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
                 hook.send(embed=embed)
 
 
