@@ -162,21 +162,21 @@ def connect_websocket(socket_url, auth_token):
                 else:
                 	print(f"C {answers[2]}")              
                 if countoption1 == maxcount:
-                    embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}** <:emoji_13:772843132093202443>\n**2. {answers[1]}:** **{countoption2}**\n**3. {answers[2]}:** **{countoption3}**", color=0x00FBFF)
+                    embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}** <a:gold:839401054855757864>\n**2. {answers[1]}:** **{countoption2}**\n**3. {answers[2]}:** **{countoption3}**", color=0x00FBFF)
                     hook.send(embed=embed2)
-                    #hook.send(f"**Google Answer = 1. {answers[0]}** <:emoji_13:772843132093202443>")
+                    #hook.send(f"**Google Answer = 1. {answers[0]}** <a:gold:839401054855757864>")
                     hook.send("+h")
                   
                 elif countoption2 == maxcount:
-                    embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}**\n**2. {answers[1]}:** **{countoption2}** <:emoji_13:772843132093202443>\n**3. {answers[2]}:** **{countoption3}**", color=0x00FBFF)
+                    embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}**\n**2. {answers[1]}:** **{countoption2}** <a:gold:839401054855757864>\n**3. {answers[2]}:** **{countoption3}**", color=0x00FBFF)
                     hook.send(embed=embed2)
-                    #hook.send(f"**Google Answer = 2. {answers[1]}** <:emoji_13:772843132093202443>")
+                    #hook.send(f"**Google Answer = 2. {answers[1]}** <a:gold:839401054855757864>")
                     hook.send("+h")
                     
                 else:
-                    embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}**\n**2. {answers[1]}:** **{countoption2}**\n**3. {answers[2]}:** **{countoption3}** <:emoji_13:772843132093202443>", color=0x00FBFF)
+                    embed2=discord.Embed(title=f"**__Google Results !__**", description=f"**1. {answers[0]}:** **{countoption1}**\n**2. {answers[1]}:** **{countoption2}**\n**3. {answers[2]}:** **{countoption3}** <a:gold:839401054855757864>", color=0x00FBFF)
                     hook.send(embed=embed2)
-                    #hook.send(f"**Google Answer = 3. {answers[2]}** <:emoji_13:772843132093202443>")
+                    #hook.send(f"**Google Answer = 3. {answers[2]}** <a:gold:839401054855757864>")
                     hook.send("+h")
                     
 
@@ -198,7 +198,7 @@ def connect_websocket(socket_url, auth_token):
                 print(eliminated)
                 #hook.send(f"**Correct Answer -- {correct}**")
                 #hook.send(f"**Advancing -- {advancing}      Eliminating --- {eliminated}**")
-                embd=discord.Embed(title="**__Answer Stats !__** ",description=f"**● Correct Answer: {correct}** <:emoji_13:772843132093202443>\n**● Advancing Players: {advancing}**\n**● Eliminated  Players: {eliminated}**",color=0x4286f4)
+                embd=discord.Embed(title="**__Answer Stats !__** ",description=f"**● Correct Answer: {correct}** <a:gold:839401054855757864>\n**● Advancing Players: {advancing}**\n**● Eliminated  Players: {eliminated}**",color=0x4286f4)
                 embd.set_footer(text=f"Made by SECURITY🥀ⱽᵒˡᵗ#0001 ", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
                 hook.send(embed=embd)
 
