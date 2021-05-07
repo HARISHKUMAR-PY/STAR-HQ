@@ -139,7 +139,7 @@ def connect_websocket(socket_url, auth_token):
                 real_question = str(question).replace(" ","+")
                 google_query = "https://google.com/search?q="+real_question             
                 embed=discord.Embed(title=f"**{qcnt}. {question}**",description=f"**1. {answers[0]}\n2. {answers[1]}\n3. {answers[2]}**",color=0xff5733)
-                embed.set_footer(text="Made By @SECURITY🥀ⱽᵒˡᵗ#0001 ", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
+                embed.set_footer(text="Made By SECURITY🥀ⱽᵒˡᵗ#0001 ", icon_url="https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024")
                 embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/765632168650866750/770460404714962974/IMG_20200920_211614.jpg")
                 hook.send(embed=embed)
                 option1=f"{answers[0]}"
